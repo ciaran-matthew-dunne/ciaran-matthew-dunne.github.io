@@ -5,12 +5,12 @@ shortbio: Postdoctoral research in mathematics & computer science.
 # description-meta: PhD student in 👽 science
 og-url: https://ciaran-matthew-dunne.github.io
 location: LMF, office 2S64
-email: cciaranddunne@gmail.com
+email: ciaran.dunne@inria.fr
 picture: img/profile.png
 picture-round: true
 side-by-side: true
 # pronouns: They/Them
-og-picture: https://basicpage.github.io/img/profile.jpg
+og-picture: https://ciaran-matthew-dunne.github.io/img/profile.jpg
 # orcid: 0000-0002-9141-1942
 dblp: https://dblp.org/pid/266/3273.html
 scholar: https://scholar.google.com/citations?user=aG4vquEAAAAJ&hl=en
@@ -26,23 +26,20 @@ linkedin: https://www.linkedin.com/in/ciar%C3%A1n-dunne-b78083281/
 #   [basicpage template](https://github.com/basicpage/basicpage.github.io),
 #   made to be easy to use! 🎓
 ---
-
 I am a postdoctoral researcher at the
-  [Laboratoire Méthodes Formelles][https://lmf.cnrs.fr/] (LMF) 
+  [Laboratoire Méthodes Formelles](https://lmf.cnrs.fr/) (LMF) 
 at 
-  [ENS Paris-Saclay][https://ens-paris-saclay.fr/], 
+  [ENS Paris-Saclay](https://ens-paris-saclay.fr/), 
 working within the research group 
-  [Deducteam][deducteam.github.io]. 
+  [Deducteam](deducteam.github.io). 
 
 I am interested in mathematical and computational structures that representing mathematics.
 In particular, I have a special interest in the intersection of type-theoretic 
 and set-theoretic technqiues for interactive theorem proving.
 
 Currently, I'm working on translating specifications and proofs from 
-[SMT solvers][https://smt-lib.org/] (in particular, [cvc5][https://cvc5.github.io/])
-to the proof assistant [Lambdapi][https://github.com/Deducteam/lambdapi].  
-
-# Publications
+[SMT solvers](https://smt-lib.org/) (in particular, [cvc5](https://cvc5.github.io/]))
+to the proof assistant [Lambdapi](https://github.com/Deducteam/lambdapi).  
 
 ``` json {.paper}
 "title": "Isabelle/HOL/GST: A Formal Proof Environment for Generalized Set Theories",
