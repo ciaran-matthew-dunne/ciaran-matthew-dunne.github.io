@@ -31,7 +31,7 @@ I am a postdoctoral researcher at the
 at 
   [ENS Paris-Saclay](https://ens-paris-saclay.fr/), 
 working within the research group 
-  [Deducteam](deducteam.github.io). 
+  [Deducteam](https://deducteam.github.io/). 
 
 I am interested in mathematical and computational structures that representing mathematics.
 In particular, I have a special interest in the intersection of type-theoretic 
