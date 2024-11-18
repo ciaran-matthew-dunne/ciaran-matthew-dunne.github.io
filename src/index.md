@@ -6,11 +6,11 @@ shortbio: Postdoctoral research in mathematics & computer science.
 og-url: https://ciaran-matthew-dunne.github.io
 location: LMF, office 2S64
 email: ciaran.dunne@inria.fr
-picture: img/profile.png
+picture: img/profile.jpg
 picture-round: true
 side-by-side: true
 # pronouns: They/Them
-og-picture: https://ciaran-matthew-dunne.github.io/img/profile.jpg
+# og-picture: img/profile.png
 # orcid: 0000-0002-9141-1942
 dblp: https://dblp.org/pid/266/3273.html
 scholar: https://scholar.google.com/citations?user=aG4vquEAAAAJ&hl=en
