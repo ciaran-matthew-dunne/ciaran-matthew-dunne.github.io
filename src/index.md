@@ -1,7 +1,7 @@
 ---
 title: Ciarán Dunne's webpage 
 author: Ciarán Dunne
-shortbio: Postdoctoral research in mathematics & computer science.
+shortbio: Postdoctoral research in mathematics & computer science
 # description-meta: PhD student in 👽 science
 og-url: https://ciaran-matthew-dunne.github.io
 location: LMF, office 2S64
@@ -33,7 +33,7 @@ at
 working within the research group 
   [Deducteam](https://deducteam.github.io/). 
 
-I am interested in mathematical and computational structures that representing mathematics.
+I am interested in mathematical and computational structures for representing mathematics.
 In particular, I have a special interest in the intersection of type-theoretic 
 and set-theoretic technqiues for interactive theorem proving.
 
@@ -54,7 +54,7 @@ to the proof assistant [Lambdapi](https://github.com/Deducteam/lambdapi).
 ``` json {.paper}
 "title": "Generating Custom Set Theories with Non-Set Structured Objects",
 "authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
-"venue": "Conference for Intelligent Computer Mathematics, Temasora, Romania",
+"venue": "Conference for Intelligent Computer Mathematics, Timișoara, Romania",
 "year": "2021",
 "url": "https://pure.hw.ac.uk/ws/portalfiles/portal/45486933/zf_plus_paper.pdf"
 ```
