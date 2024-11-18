@@ -38,8 +38,10 @@ In particular, I have a special interest in the intersection of type-theoretic
 and set-theoretic technqiues for interactive theorem proving.
 
 Currently, I'm working on translating specifications and proofs from 
-[SMT solvers](https://smt-lib.org/) (in particular, [cvc5](https://cvc5.github.io/]))
+[SMT solvers](https://smt-lib.org/) (in particular, [cvc5](https://cvc5.github.io/))
 to the proof assistant [Lambdapi](https://github.com/Deducteam/lambdapi).  
+
+# Publications
 
 ``` json {.paper}
 "title": "Isabelle/HOL/GST: A Formal Proof Environment for Generalized Set Theories",
