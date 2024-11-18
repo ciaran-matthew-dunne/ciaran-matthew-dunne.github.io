@@ -57,7 +57,7 @@ to the proof assistant [Lambdapi][https://github.com/Deducteam/lambdapi].
 "authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
 "venue": "Conference for Intelligent Computer Mathematics, Temasora, Romania",
 "year": "2021",
-"url": "https://pure.hw.ac.uk/ws/portalfiles/portal/45486933/zf_plus_paper.pdf",
+"url": "https://pure.hw.ac.uk/ws/portalfiles/portal/45486933/zf_plus_paper.pdf"
 ```
 
 ``` json {.paper}
@@ -65,7 +65,7 @@ to the proof assistant [Lambdapi][https://github.com/Deducteam/lambdapi].
 "authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
 "venue": "Conference for Intelligent Computer Mathematics, Temasora, Italy",
 "year": "2020",
-"url": "https://arxiv.org/pdf/2005.13954",
+"url": "https://arxiv.org/pdf/2005.13954"
 ```
 <!-- 
 ## PhD Thesis
