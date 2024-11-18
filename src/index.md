@@ -1,128 +1,77 @@
 ---
-title: Template homepage
-author: Templato Urnehm
-shortbio: PhD student in 👽 science
-description-meta: PhD student in 👽 science
-og-url: https://basicpage.github.io
-location: Some lab, office 777
-email: noreply@noemail.com
+title: Ciarán Dunne's webpage 
+author: Ciarán Dunne
+shortbio: Postdoctoral research in mathematics & computer science.
+# description-meta: PhD student in 👽 science
+og-url: https://ciaran-matthew-dunne.github.io
+location: LMF, office 2S64
+email: cciaranddunne@gmail.com
 picture: img/profile.png
-picture-round: false
+picture-round: true
 side-by-side: true
-pronouns: They/Them
-og-picture: https://basicpage.github.io/img/profile.png
-orcid: 0000-0000-0000-0000
-dblp: https://dblp.org/
-scholar: https://scholar.google.com/
-hal: https://hal.science/
-mastodon: https://lipn.info
-github: basicpage
-gitlab: gitlab
-bitbucket: bitbucket.com
-bluesky: https://bsky.app/
-linkedin: https://www.linkedin.com
-footer: >-
-  Based on the
-  [basicpage template](https://github.com/basicpage/basicpage.github.io),
-  made to be easy to use! 🎓
+# pronouns: They/Them
+og-picture: https://basicpage.github.io/img/profile.jpg
+# orcid: 0000-0002-9141-1942
+dblp: https://dblp.org/pid/266/3273.html
+scholar: https://scholar.google.com/citations?user=aG4vquEAAAAJ&hl=en
+# hal: https://hal.science/
+# mastodon: https://lipn.info
+github: ciaran-matthew-dunne
+# gitlab: gitlab
+# bitbucket: bitbucket.com
+# bluesky: https://bsky.app/
+linkedin: https://www.linkedin.com/in/ciar%C3%A1n-dunne-b78083281/
+# footer: >-
+#   Based on the
+#   [basicpage template](https://github.com/basicpage/basicpage.github.io),
+#   made to be easy to use! 🎓
 ---
 
-I am a (fake) PhD student, working on 👽 science on all kinds of related topics.
+I am a postdoctoral researcher at the
+  [Laboratoire Méthodes Formelles][https://lmf.cnrs.fr/] (LMF) 
+at 
+  [ENS Paris-Saclay][https://ens-paris-saclay.fr/], 
+working within the research group 
+  [Deducteam][deducteam.github.io]. 
 
-My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
-<kbd>Ctrl</kbd> + <kbd>V</kbd>. 🫣
+I am interested in mathematical and computational structures that representing mathematics.
+In particular, I have a special interest in the intersection of type-theoretic 
+and set-theoretic technqiues for interactive theorem proving.
 
-> [!NOTE]
-> This website is obviously a fake one, but it's meant to be very easy to use.
-> Just follow the README of the
-> [Github repository](https://github.com/basicpage/basicpage.github.io).
+Currently, I'm working on translating specifications and proofs from 
+[SMT solvers][https://smt-lib.org/] (in particular, [cvc5][https://cvc5.github.io/])
+to the proof assistant [Lambdapi][https://github.com/Deducteam/lambdapi].  
 
 # Publications
 
-## Conference papers
-
 ``` json {.paper}
-"title": "Towards automatic academic pages 2",
-"authors": "Templato Urnehm, U. N. Owen, Wan Morotter",
-"venue": "Principles of Awesomeness (PAW)",
-"year": "2024",
-"url": "https://basicpage.github.io"
+"title": "Isabelle/HOL/GST: A Formal Proof Environment for Generalized Set Theories",
+"authors": "Ciarán Dunne, J. B. Wells",
+"venue": "Conference for Intelligent Computer Mathematics, Tbisili, Georgia",
+"year": "2022",
+"url": "https://arxiv.org/pdf/2207.12039"
 ```
 
 ``` json {.paper}
-"title": "Towards automatic academic pages",
-"authors": "Templato Urnehm, U. N. Owen",
-"venue": "Principles of Awesomeness (PAW)",
-"year": "2023",
-"url": "https://basicpage.github.io",
-"files": [
-  { "text": "Paper", "type": "pdf", "src": "foo.pdf" },
-  { "text": "Bibtex", "type": "bib", "src": "foo.bib" },
-  { "text": "Formalisation", "type": "code", "src": "foo.v" }
-]
-```
-
-## Journal papers
-
-``` yaml {.paper}
-title: Yet another yaml parser 3
-authors: Templato Urnehm
-venue: Proceedings of Nihilism
-year: 2029
-url: https://basicpage.github.io
-files:
-  - text: Paper
-    type: pdf
-    scr: foo.pdf
-  - text: Bibtex
-    type: bib
-    src: foo.bib
-```
-
-``` yaml {.papers}
-papers:
-  - title: Yet another yaml parser 2
-    authors: Templato Urnehm
-    venue: Proceedings of Nihilism
-    year: 2027
-    files:
-      - text: Paper
-        type: pdf
-        scr: foo.pdf
-      - text: Bibtex
-        type: bib
-        src: foo.bib
-  - title: Yet another yaml parser
-    authors: Templato Urnehm
-    venue: Proceedings of Nihilism
-    year: 2025
-    files:
-      - text: Paper
-        type: pdf
-        scr: foo.pdf
-      - text: Bibtex
-        type: bib
-        src: foo.bib
-      - text: Some link
-        type: link
-        src: fake.link.xyz
-      - text: Repo
-        type: git
-        src: github.com
+"title": "Generating Custom Set Theories with Non-Set Structured Objects",
+"authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
+"venue": "Conference for Intelligent Computer Mathematics, Temasora, Romania",
+"year": "2021",
+"url": "https://pure.hw.ac.uk/ws/portalfiles/portal/45486933/zf_plus_paper.pdf",
 ```
 
 ``` json {.paper}
-"title": "How to tame your wagon",
-"authors": "Templato Urnehm",
-"venue": "Journal of Automatic Rejection (JAR)",
-"year": "2022"
+"title": "Adding an Abstraction Barrier to ZF Set Theory",
+"authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
+"venue": "Conference for Intelligent Computer Mathematics, Temasora, Italy",
+"year": "2020",
+"url": "https://arxiv.org/pdf/2005.13954",
 ```
-
-## Drafts
+<!-- 
+## PhD Thesis
 
 ``` json {.paper}
-"title": "TBD",
-"authors": "TBD",
+"title": "Towards a Set-Theoretic Foundation Closer to Mathematical Text",
 "files": [
   { "text": "🐱 video", "type": "video", "src": "foo.mov" },
   { "text": "Poem", "type": "txt", "src": "foo.txt" },
@@ -131,9 +80,9 @@ papers:
   { "text": "Slides", "type": "slides", "src": "foo.key" },
   { "text": "Some random file", "src": "foo.rand" }
 ]
-```
+``` -->
 
-## Talks
+<!-- ## Talks
 
 ``` json {.papers}
 {
@@ -152,8 +101,8 @@ papers:
   "venue": "Don't remember…",
   "year": "???"
 }
-```
-
+``` -->
+<!-- 
 # Education
 
 - I was able to paint with my hands in kindergarten.
@@ -169,3 +118,4 @@ papers:
 - 32 reviews for Journal of Awesomeness.
 - 1 review for a cool conference.
 - PC member of the journal of my school.
+ -->
