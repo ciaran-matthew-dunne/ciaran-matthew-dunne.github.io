@@ -1,11 +1,11 @@
 ---
 title: Ciarán Dunne's webpage 
 author: Ciarán Dunne
-shortbio: Postdoctoral research in mathematics & computer science
+shortbio: Postdoctoral researcher in mathematics & computer science
 # description-meta: PhD student in 👽 science
 og-url: https://ciaran-matthew-dunne.github.io
 location: LMF, office 2S64
-email: ciaran.dunne@inria.fr
+email: ciaran-matthew.dunne@telecom-sudparis.eu
 picture: img/profile.jpg
 picture-round: true
 side-by-side: true
