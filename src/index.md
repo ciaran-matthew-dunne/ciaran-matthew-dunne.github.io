@@ -26,11 +26,11 @@ linkedin: https://www.linkedin.com/in/ciar%C3%A1n-dunne-b78083281/
 #   made to be easy to use! 🎓
 ---
 I am a postdoctoral researcher working within the
-research group [Deducteam](https://deducteam.github.io/).
+research group [Deducteam](https://deducteam.gitlabpages.inria.fr/).
 
 My research centers around the development of mathematical and
 computational structures for automated reasoning.
-In particular, I have a special interest in
+In particular, I have a special interest in combining
 type-theoretic and set-theoretic techniques for
 interactive theorem proving.
 
