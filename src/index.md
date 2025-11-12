@@ -28,7 +28,7 @@ linkedin: https://www.linkedin.com/in/ciar%C3%A1n-dunne-b78083281/
 I am a postdoctoral researcher working within the
 research group [Deducteam](https://deducteam.github.io/).
 
-I am interested in the development of mathematical and
+My research centers around the development of mathematical and
 computational structures for automated reasoning.
 In particular, I have a special interest in
 type-theoretic and set-theoretic techniques for
@@ -44,16 +44,13 @@ From April 2024 to April 2025, I worked on a project
 supported by an [Amazon Research Award](https://www.amazon.science/research-awards)
 for translating proof certificates from [SMT solvers](https://smt-lib.org/)
 to the proof assistant [LambdaPi](https://github.com/Deducteam/lambdapi).
-<!---->
 This work led to the development of a tool
 [`eo2lp`](https://github.com/ciaran-matthew-dunne/eo2lp/)
 for translating signatures and proofs from [Eunoia](https://github.com/cvc5/ethos/blob/main/user_manual.md)
-to LambdaPi.
-<!---->
-This work is currently discussed in a [draft](https://hal.science/file/index/docid/5361775/filename/eo2lp.pdf).
+to LambdaPi, which is discussed in the following [draft](https://hal.science/file/index/docid/5361775/filename/eo2lp.pdf).
 
 
-# Working Papers and Drafts
+## Working Papers and Drafts
 
 ``` json {.paper}
 "title": "Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus",
@@ -63,7 +60,7 @@ This work is currently discussed in a [draft](https://hal.science/file/index/doc
 ```
 
 
-# Publications
+## Publications
 
 ``` json {.paper}
 "title": "Isabelle/HOL/GST: A Formal Proof Environment for Generalized Set Theories",
@@ -89,7 +86,7 @@ This work is currently discussed in a [draft](https://hal.science/file/index/doc
 "url": "https://arxiv.org/pdf/2005.13954"
 ```
 
-# PhD Thesis
+## PhD Thesis
 
 ``` json {.paper}
 "title": "Towards a Set-Theoretic Foundation Closer to Mathematical Text",
