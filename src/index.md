@@ -47,7 +47,7 @@ to the proof assistant [LambdaPi](https://github.com/Deducteam/lambdapi).
 This work led to the development of a tool
 [`eo2lp`](https://github.com/ciaran-matthew-dunne/eo2lp/)
 for translating signatures and proofs from [Eunoia](https://github.com/cvc5/ethos/blob/main/user_manual.md)
-to LambdaPi, which is discussed in the following [draft](https://hal.science/file/index/docid/5361775/filename/eo2lp.pdf).
+to LambdaPi, which is discussed in the following [draft](files/eo2lp.pdf).
 
 
 ## Working Papers and Drafts
@@ -56,7 +56,7 @@ to LambdaPi, which is discussed in the following [draft](https://hal.science/fil
 "title": "Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus",
 "authors": "Ciarán Dunne, Guillaume Burel",
 "year": "2025",
-"url": "https://hal.science/file/index/docid/5361775/filename/eo2lp.pdf"
+"url": "files/eo2lp.pdf"
 ```
 
 
