@@ -123,10 +123,18 @@ function paper(data)
 
   local div_content = {
     pandoc.Header(3, header),
-    pandoc.Div(authors, {class = "authors"}),
-    pandoc.Para(sub),
-    pandoc.Div(file_info, {class = "files"})
   }
+
+  local authors_str = pandoc.utils.stringify(pandoc.Pandoc{pandoc.Plain(authors)})
+  if authors_str ~= "" then
+    table.insert(div_content, pandoc.Div(authors, {class = "authors"}))
+  end
+
+  if #sub > 0 then
+    table.insert(div_content, pandoc.Para(sub))
+  end
+
+  table.insert(div_content, pandoc.Div(file_info, {class = "files"}))
 
   local classes = "paper"
   if status then

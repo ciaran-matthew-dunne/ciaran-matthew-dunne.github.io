@@ -88,19 +88,32 @@ body::before {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--col-accent), var(--col-accent-h));
+  background: linear-gradient(90deg, var(--col-accent-h), var(--col-accent) 40%, var(--col-accent-h));
   z-index: 100;
+}
+
+/* ─── Selection ───────────────────────────────────────────── */
+
+::selection {
+  background: var(--col-accent);
+  color: var(--col-bg);
 }
 
 /* ─── Links ───────────────────────────────────────────────── */
 
 a {
   color: var(--col-accent);
-  text-decoration: none;
-  transition: color 0.2s ease;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-a:hover { color: var(--col-accent-h); }
+a:hover {
+  color: var(--col-accent-h);
+  text-decoration-color: var(--col-accent-h);
+}
 
 a:focus-visible {
   outline: 2px solid var(--col-accent);
@@ -118,8 +131,8 @@ code {
 ul { padding-left: 1.15em; }
 li { margin-bottom: var(--space-xs); }
 
-strong a { color: var(--col-text); }
-strong a:hover { color: var(--col-accent); }
+strong a { color: var(--col-text); text-decoration: none; }
+strong a:hover { color: var(--col-accent); text-decoration: none; }
 
 /* ─── Header ──────────────────────────────────────────────── */
 
@@ -222,13 +235,14 @@ header::before {
 
 .icons {
   display: flex;
-  gap: 14px;
+  gap: 18px;
   margin-top: var(--space-s);
 }
 
 .icons a {
   font-size: 1.25rem;
   color: var(--col-text-2);
+  text-decoration: none;
   transition: color 0.2s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -262,6 +276,7 @@ nav ul li a {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--col-text-3);
+  text-decoration: none;
   padding-bottom: 4px;
   position: relative;
   transition: color 0.2s ease;
@@ -293,6 +308,13 @@ main {
 main > p,
 main > ul {
   max-width: var(--measure);
+}
+
+/* Lede — first paragraph is the bio intro */
+main > p:first-child {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--col-text);
 }
 
 main p {
@@ -367,6 +389,7 @@ section.paper h3 {
 
 section.paper h3 a {
   color: var(--col-text);
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
@@ -379,6 +402,10 @@ section.paper div.authors {
   color: var(--col-text-2);
   font-style: italic;
   margin-top: 2px;
+}
+
+section.paper div.authors:empty {
+  display: none;
 }
 
 section.paper p {
@@ -438,6 +465,7 @@ div.files a {
   font-family: var(--font-mono);
   font-size: 0.68rem;
   font-weight: 500;
+  text-decoration: none;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
   cursor: pointer;
 }
