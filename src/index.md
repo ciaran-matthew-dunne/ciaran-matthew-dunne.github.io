@@ -49,9 +49,17 @@ Two currently active projects I am working on:
   [Atelier-B](https://www.atelierb.eu/en/)---an industrial platform for
   verifying railway and nuclear safety systems---into LambdaPi,
   developed in collaboration with [CLEARSY](https://www.clearsy.com/en/).
+  See the [note](files/pp2lp-note.pdf).
 
 
 ## Working Papers and Drafts
+
+``` json {.paper}
+"title": "Verifying Atelier B's Predicate Prover",
+"authors": "Ciarán Dunne, Guillaume Burel",
+"year": "2026",
+"url": "files/pp2lp-note.pdf"
+```
 
 ``` json {.paper}
 "title": "Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus",
