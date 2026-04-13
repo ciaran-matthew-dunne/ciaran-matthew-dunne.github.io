@@ -117,7 +117,8 @@ Two currently active projects I am working on:
 "authors": "Ciarán Dunne, Guillaume Burel",
 "venue": "Deducteam seminar",
 "year": "2026",
-"url": "files/talks/eo2lp-talk.pdf"
+"url": "files/talks/eo2lp-talk.pdf",
+"files": [{"text": "no-reveal", "type": "slides", "src": "files/talks/eo2lp-talk-handout.pdf"}]
 ```
 
 ``` json {.paper}
