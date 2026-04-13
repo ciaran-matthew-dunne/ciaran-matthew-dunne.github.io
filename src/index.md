@@ -25,21 +25,14 @@ linkedin: https://www.linkedin.com/in/ciar%C3%A1n-dunne-b78083281/
 #   [basicpage template](https://github.com/basicpage/basicpage.github.io),
 #   made to be easy to use! 🎓
 ---
-I am a postdoctoral researcher in the INRIA research group
-[Deducteam](https://deducteam.gitlabpages.inria.fr/),
-interested in the foundations and interoperability of automated reasoning
-tools---particularly bridging set-theoretic and type-theoretic approaches
-to mathematics.
+I am a postdoctoral researcher in the 
+  [Deducteam](https://deducteam.gitlabpages.inria.fr/),
+research group. 
+My research considers the the foundations and interoperability of 
+automated reasoning tools. I am particularly interested in bridging
+set-theoretic and type-theoretic approaches to foundations.
 
-I build tools that facilitate interoperability between proof assistants,
-SMT solvers, and other automated reasoning systems.
-I also maintain the
-[Zed extension](https://github.com/ciaran-matthew-dunne/zed-lambdapi)
-for the [LambdaPi](https://github.com/Deducteam/lambdapi) proof assistant,
-and an [MCP server](https://github.com/ciaran-matthew-dunne/lambdapi/tree/mcp-server)
-that allows LLM agents to interact with LambdaPi.
-
-Currently working on two projects on proof system interoperability:
+Two currently active projects I am working on:
 
 - **[`eo2lp`](https://github.com/ciaran-matthew-dunne/eo2lp/)**:
   Supported by an [Amazon Research Award](https://www.amazon.science/research-awards) (2024--2025),
@@ -110,26 +103,61 @@ Currently working on two projects on proof system interoperability:
 "url": "https://www.ros.hw.ac.uk/server/api/core/bitstreams/46995a75-616c-4632-ab27-6ed227d722a9/content"
 ```
 
-<!-- ## Talks
+## Talks
 
-``` json {.papers}
-{
-  "title": "Talk 1",
-  "authors": "Templato Urnehm",
-  "venue": "My room"
-},
-{
-  "title": "Secret talk",
-  "authors": "Templato Urnehm",
-  "year": "1990"
-},
-{
-  "title": "Talk 3",
-  "authors": "Templato Urnehm",
-  "venue": "Don't remember…",
-  "year": "???"
-}
-``` -->
+``` json {.paper}
+"title": "Generating AI Slop in LambdaPi",
+"venue": "LMF, Université Paris-Saclay",
+"year": "2026",
+"url": "files/talks/lp-slop-talk.pdf"
+```
+
+``` json {.paper}
+"title": "Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus",
+"authors": "Ciarán Dunne, Guillaume Burel",
+"venue": "Deducteam seminar",
+"year": "2026",
+"url": "files/talks/eo2lp-talk.pdf"
+```
+
+``` json {.paper}
+"title": "Generalized Set Theories in Isabelle/HOL",
+"venue": "SPLV 2022, Heriot-Watt University",
+"year": "2022",
+"url": "files/talks/splv-2022-talk.pdf",
+"files": [{"text": "video", "type": "video", "src": "https://www.youtube.com/watch?v=_h0Qc4aKAAc"}]
+```
+
+``` json {.paper}
+"title": "Generating Custom Set Theories with Non-Set Structured Objects",
+"authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
+"venue": "CICM 2021, Timișoara, Romania",
+"year": "2021",
+"url": "files/talks/cicm-2021-talk.pdf",
+"files": [{"text": "video", "type": "video", "src": "https://www.youtube.com/watch?v=TDde2RunWFE"}]
+```
+
+``` json {.paper}
+"title": "Flexible Foundations of Mathematics",
+"venue": "Numerous Numerosity Workshop",
+"year": "2021",
+"url": "files/talks/numerous-numerosity-talk.pdf"
+```
+
+``` json {.paper}
+"title": "Adding an Abstraction Barrier to ZF Set Theory",
+"authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
+"venue": "CICM 2020",
+"year": "2020",
+"url": "files/talks/cicm-2020-talk.pdf"
+```
+
+``` json {.paper}
+"title": "Towards a Set Theoretic Foundation Closer to Mathematical Text",
+"venue": "First year PhD talk, Heriot-Watt University",
+"year": "2020",
+"url": "files/talks/first-year-talk.pdf"
+```
 <!--
 # Education
 
