@@ -23,6 +23,11 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Fetch latest CV
+        run: |
+          curl -sL -o website/files/cv.pdf \
+            "https://raw.githubusercontent.com/ciaran-matthew-dunne/cv/main/cv.pdf"
+
       - name: Build main homepage
         uses: docker://pandoc/core:3.2
         with:
