@@ -7,6 +7,7 @@ function jsondata(data)
   newdata.authors = data.authors or {}
   newdata.venue = data.venue
   newdata.year = data.year
+  newdata.status = data.status
   newdata.files = data.files or pandoc.List()
 
   return newdata
@@ -25,6 +26,9 @@ function yamldata(data)
   end
   if data.year then
     newdata.year = pandoc.utils.stringify(data["year"])
+  end
+  if data.status then
+    newdata.status = pandoc.utils.stringify(data["status"])
   end
   local files = data["files"] or pandoc.List()
 
@@ -49,6 +53,7 @@ function paper(data)
   local authors = data.authors
   local venue = data.venue
   local year = data.year
+  local status = data.status
   local files = data.files
 
   local header = {}
@@ -64,9 +69,17 @@ function paper(data)
   if venue and year then
     sub = { pandoc.Str(string.format("%s (%s)", venue, year)) }
   elseif venue then
-    sub = { venue }
+    sub = { pandoc.Str(venue) }
   elseif year then
-    sub = { year }
+    sub = { pandoc.Str(year) }
+  end
+
+  if status then
+    if #sub > 0 then
+      table.insert(sub, pandoc.Str(" "))
+    end
+    table.insert(sub, pandoc.RawInline("html",
+      string.format('<span class="status %s">%s</span>', status, status)))
   end
 
   local file_info = files:map(function(data)
@@ -115,7 +128,12 @@ function paper(data)
     pandoc.Div(file_info, {class = "files"})
   }
 
-  local div = pandoc.Div(div_content, {class = "paper"})
+  local classes = "paper"
+  if status then
+    classes = classes .. " " .. status
+  end
+
+  local div = pandoc.Div(div_content, {class = classes})
 
   return div
 

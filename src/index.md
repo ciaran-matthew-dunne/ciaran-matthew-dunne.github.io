@@ -2,7 +2,7 @@
 title: Ciarán Dunne's webpage
 author: Ciarán Dunne
 shortbio: Postdoctoral researcher in formal methods
-# description-meta: PhD student in 👽 science
+description-meta: Formal methods researcher building tools for proof system interoperability. Postdoc at ENS Paris-Saclay / Télécom SudParis (Deducteam, INRIA).
 og-url: https://ciaran-matthew-dunne.github.io
 email: ciaran-matthew.dunne@telecom-sudparis.eu
 picture: img/profile.jpg
@@ -11,6 +11,7 @@ side-by-side: true
 # pronouns: They/Them
 # og-picture: img/profile.png
 # orcid: 0000-0002-9141-1942
+cv: files/cv.pdf
 dblp: https://dblp.org/pid/266/3273.html
 scholar: https://scholar.google.com/citations?user=aG4vquEAAAAJ&hl=en
 # hal: https://hal.science/
@@ -26,21 +27,13 @@ linkedin: https://www.linkedin.com/in/ciar%C3%A1n-dunne-b78083281/
 #   made to be easy to use! 🎓
 ---
 I am a postdoctoral researcher in the 
-  [Deducteam](https://deducteam.gitlabpages.inria.fr/),
+  [Deducteam](https://deducteam.gitlabpages.inria.fr/)
 research group. 
-My research considers the the foundations and interoperability of 
+My research concerns the foundations and interoperability of 
 automated reasoning tools. I am particularly interested in bridging
 set-theoretic and type-theoretic approaches to foundations.
 
-Two currently active projects I am working on:
-
-- **[`eo2lp`](https://github.com/ciaran-matthew-dunne/eo2lp/)**:
-  Supported by an [Amazon Research Award](https://www.amazon.science/research-awards) (2024--2025),
-  an OCaml tool translating proof certificates from the SMT solver
-  [cvc5](https://cvc5.github.io/) to LambdaPi.
-  The translation targets [Eunoia](https://github.com/cvc5/ethos/blob/main/user_manual.md),
-  a logical framework that encodes cvc5's proof calculus.
-  See the [draft paper](files/eo2lp.pdf).
+## Active Projects
 
 - **pp2lp**:
   Supported by the [ANR](https://anr.fr/en/anrs-role-in-research/about-us/missions/)
@@ -49,34 +42,65 @@ Two currently active projects I am working on:
   [Atelier-B](https://www.atelierb.eu/en/)---an industrial platform for
   verifying railway and nuclear safety systems---into LambdaPi,
   developed in collaboration with [CLEARSY](https://www.clearsy.com/en/).
-  See the [note](files/pp2lp-note.pdf).
+  For more information, see the following [note](files/pp2lp-note.pdf).
 
+- **[`eo2lp`](https://github.com/ciaran-matthew-dunne/eo2lp/)**:
+  Supported by an [Amazon Research Award](https://www.amazon.science/research-awards) (2024--2025),
+  an OCaml tool translating proof certificates from the SMT solver
+  [cvc5](https://cvc5.github.io/) to LambdaPi.
+  The translation targets [Eunoia](https://github.com/cvc5/ethos/blob/main/user_manual.md),
+  a logical framework that encodes cvc5's proof calculus.
+  See current working draft of the [paper](files/eo2lp.pdf).
 
-## Working Papers and Drafts
+- **LambdaPi tooling**:
+  [MCP server](https://github.com/ciaran-matthew-dunne/lambdapi/tree/mcp-server)
+  allowing LLM agents to interact with LambdaPi
+  (see related [talk](files/talks/lp-slop-talk.pdf)),
+  and a [Zed editor extension](https://github.com/ciaran-matthew-dunne/zed-lambdapi)
+  with LSP and tree-sitter support.
+
+## Publications
 
 ``` json {.paper}
 "title": "Verifying Atelier B's Predicate Prover",
 "authors": "Ciarán Dunne, Guillaume Burel",
-"year": "2026",
-"url": "files/pp2lp-note.pdf"
+"year": "Note — 2026",
+"files": [
+  {"text": "paper", "type": "pdf", "src": "files/pp2lp-note.pdf"}
+]
 ```
 
 ``` json {.paper}
 "title": "Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus",
 "authors": "Ciarán Dunne, Guillaume Burel",
-"year": "2025",
-"url": "files/eo2lp.pdf"
+"year": "Preprint — 2025",
+"files": [
+  {"text": "paper", "type": "pdf", "src": "files/eo2lp.pdf"},
+  {"text": "talk", "type": "slides", "src": "files/talks/eo2lp-talk-handout.pdf"}
+]
 ```
 
-
-## Publications
+``` json {.paper}
+"title": "Towards a Set-Theoretic Foundation Closer to Mathematical Text",
+"year": "PhD Thesis — 2023",
+"files": [
+  {"text": "thesis", "type": "pdf", "src": "https://www.ros.hw.ac.uk/server/api/core/bitstreams/46995a75-616c-4632-ab27-6ed227d722a9/content"},
+  {"text": "talk (2021)", "type": "slides", "src": "files/talks/numerous-numerosity-talk.pdf"},
+  {"text": "talk (2020)", "type": "slides", "src": "files/talks/first-year-talk.pdf"}
+]
+```
 
 ``` json {.paper}
 "title": "Isabelle/HOL/GST: A Formal Proof Environment for Generalized Set Theories",
 "authors": "Ciarán Dunne, J. B. Wells",
 "venue": "Conference for Intelligent Computer Mathematics, Tbisili, Georgia",
 "year": "2022",
-"url": "https://arxiv.org/pdf/2207.12039"
+"files": [
+  {"text": "paper", "type": "pdf", "src": "https://arxiv.org/pdf/2207.12039"},
+  {"text": "talk", "type": "slides", "src": "files/talks/splv-2022-talk.pdf"},
+  {"text": "video", "type": "video", "src": "https://www.youtube.com/watch?v=_h0Qc4aKAAc"},
+  {"text": "code", "type": "code", "src": "https://github.com/ultra-group/isabelle-gst"}
+]
 ```
 
 ``` json {.paper}
@@ -84,103 +108,20 @@ Two currently active projects I am working on:
 "authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
 "venue": "Conference for Intelligent Computer Mathematics, Timișoara, Romania",
 "year": "2021",
-"url": "https://pure.hw.ac.uk/ws/portalfiles/portal/45486933/zf_plus_paper.pdf"
+"files": [
+  {"text": "paper", "type": "pdf", "src": "https://pure.hw.ac.uk/ws/portalfiles/portal/45486933/zf_plus_paper.pdf"},
+  {"text": "talk", "type": "slides", "src": "files/talks/cicm-2021-talk.pdf"},
+  {"text": "video", "type": "video", "src": "https://www.youtube.com/watch?v=TDde2RunWFE"}
+]
 ```
 
 ``` json {.paper}
 "title": "Adding an Abstraction Barrier to ZF Set Theory",
 "authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
-"venue": "Conference for Intelligent Computer Mathematics, Temasora, Italy",
+"venue": "Conference for Intelligent Computer Mathematics, Bertinoro, Italy",
 "year": "2020",
-"url": "https://arxiv.org/pdf/2005.13954"
+"files": [
+  {"text": "paper", "type": "pdf", "src": "https://arxiv.org/pdf/2005.13954"},
+  {"text": "talk", "type": "slides", "src": "files/talks/cicm-2020-talk.pdf"}
+]
 ```
-
-## Software
-
-- **[eo2lp](https://github.com/ciaran-matthew-dunne/eo2lp)** --- OCaml tool translating Eunoia/cvc5 proof systems to LambdaPi.
-- **pp2lp** --- OCaml tool translating Atelier B proof traces to LambdaPi. (With CLEARSY, ANR ICSPA.)
-- **[LambdaPi MCP server](https://github.com/ciaran-matthew-dunne/lambdapi/tree/mcp-server)** --- Model Context Protocol server allowing LLM agents to interact with LambdaPi.
-- **[zed-lambdapi](https://github.com/ciaran-matthew-dunne/zed-lambdapi)** --- Zed editor extension for LambdaPi with LSP and tree-sitter support.
-- **[Isabelle/HOL/GST](https://github.com/ultra-group/isabelle-gst)** --- Isabelle framework for generalized set theories.
-
-## PhD Thesis
-
-``` json {.paper}
-"title": "Towards a Set-Theoretic Foundation Closer to Mathematical Text",
-"year": "2023",
-"url": "https://www.ros.hw.ac.uk/server/api/core/bitstreams/46995a75-616c-4632-ab27-6ed227d722a9/content"
-```
-
-## Talks
-
-``` json {.paper}
-"title": "Generating AI Slop in LambdaPi",
-"venue": "LMF, Université Paris-Saclay",
-"year": "2026",
-"url": "files/talks/lp-slop-talk.pdf"
-```
-
-``` json {.paper}
-"title": "Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus",
-"authors": "Ciarán Dunne, Guillaume Burel",
-"venue": "Deducteam seminar",
-"year": "2026",
-"url": "files/talks/eo2lp-talk.pdf",
-"files": [{"text": "no-reveal", "type": "slides", "src": "files/talks/eo2lp-talk-handout.pdf"}]
-```
-
-``` json {.paper}
-"title": "Generalized Set Theories in Isabelle/HOL",
-"venue": "SPLV 2022, Heriot-Watt University",
-"year": "2022",
-"url": "files/talks/splv-2022-talk.pdf",
-"files": [{"text": "video", "type": "video", "src": "https://www.youtube.com/watch?v=_h0Qc4aKAAc"}]
-```
-
-``` json {.paper}
-"title": "Generating Custom Set Theories with Non-Set Structured Objects",
-"authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
-"venue": "CICM 2021, Timișoara, Romania",
-"year": "2021",
-"url": "files/talks/cicm-2021-talk.pdf",
-"files": [{"text": "video", "type": "video", "src": "https://www.youtube.com/watch?v=TDde2RunWFE"}]
-```
-
-``` json {.paper}
-"title": "Flexible Foundations of Mathematics",
-"venue": "Numerous Numerosity Workshop",
-"year": "2021",
-"url": "files/talks/numerous-numerosity-talk.pdf"
-```
-
-``` json {.paper}
-"title": "Adding an Abstraction Barrier to ZF Set Theory",
-"authors": "Ciarán Dunne, J. B. Wells, Fairouz Kamareddine",
-"venue": "CICM 2020",
-"year": "2020",
-"url": "files/talks/cicm-2020-talk.pdf"
-```
-
-``` json {.paper}
-"title": "Towards a Set Theoretic Foundation Closer to Mathematical Text",
-"venue": "First year PhD talk, Heriot-Watt University",
-"year": "2020",
-"url": "files/talks/first-year-talk.pdf"
-```
-<!--
-# Education
-
-- I was able to paint with my hands in kindergarten.
-- I went to high school where I studied stuff.
-- Master degree in hand painting.
-
-# Teaching
-
-- I am teaching the TD sessions on the 👽 science course.
-
-# Community service
-
-- 32 reviews for Journal of Awesomeness.
-- 1 review for a cool conference.
-- PC member of the journal of my school.
- -->
