@@ -50,7 +50,7 @@ set-theoretic and type-theoretic approaches to foundations.
   [cvc5](https://cvc5.github.io/) to LambdaPi.
   The translation targets [Eunoia](https://github.com/cvc5/ethos/blob/main/user_manual.md),
   a logical framework that encodes cvc5's proof calculus.
-  See current working draft of the [paper](files/eo2lp.pdf).
+  The resulting [paper](files/eo2lp.pdf) was accepted to IJCAR 2026.
 
 - **LambdaPi tooling**:
   [MCP server](https://github.com/ciaran-matthew-dunne/lambdapi/tree/mcp-server)
@@ -73,7 +73,8 @@ set-theoretic and type-theoretic approaches to foundations.
 ``` json {.paper}
 "title": "Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus",
 "authors": "Ciarán Dunne, Guillaume Burel",
-"year": "Preprint — 2025",
+"venue": "International Joint Conference on Automated Reasoning, Lisbon, Portugal",
+"year": "2026",
 "files": [
   {"text": "paper", "type": "pdf", "src": "files/eo2lp.pdf"},
   {"text": "talk", "type": "slides", "src": "files/talks/eo2lp-talk-handout.pdf"}
