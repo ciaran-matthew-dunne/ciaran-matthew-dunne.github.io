@@ -3,3 +3,6 @@
 .claude/
 
 website/index.html
+
+# apart: local preview copy of the encrypted snapshot (the deployed app reads the apart-data branch)
+website/apart/data.enc
