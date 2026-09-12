@@ -1,9 +1,0 @@
-{
-  "name": "Food · Bures-sur-Yvette",
-  "short_name": "Food",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#f8f7f3",
-  "theme_color": "#3d6b4a",
-  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
-}
