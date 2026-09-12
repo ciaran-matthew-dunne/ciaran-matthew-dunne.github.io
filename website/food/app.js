@@ -344,9 +344,28 @@ function listItem(it) {
   return li;
 }
 
+/**
+ * An <img> that retries a failed load a couple of times (the Nico host answers 429 to bursts of
+ * requests) and turns into a placeholder if it keeps failing.
+ */
+function productImg(url, attrs, placeholder) {
+  const img = h('img', { ...attrs, src: url, referrerpolicy: 'no-referrer' });
+  let tries = 0;
+  img.addEventListener('error', () => {
+    if (tries++ < 2) {
+      setTimeout(() => {
+        img.src = '';
+        img.src = url;
+      }, 1500 * tries + Math.random() * 1000);
+    } else img.replaceWith(placeholder());
+  });
+  return img;
+}
+
 function productThumb(p, size = 120) {
   const url = imageUrl(p, size);
-  return url ? h('img', { class: 'thumb', src: url, alt: '', loading: 'lazy' }) : h('div', { class: 'thumb ph' }, icon('basket'));
+  const ph = () => h('div', { class: 'thumb ph' }, icon('basket'));
+  return url ? productImg(url, { class: 'thumb', alt: '', loading: 'lazy' }, ph) : ph();
 }
 
 // ---------------------------------------------------------------------------- pantry
@@ -620,7 +639,7 @@ function resultsGrid(results) {
     return h(
       'a',
       { class: `result ${p.st ? '' : 'oos'}`, href: p.u, target: '_blank', rel: 'noreferrer' },
-      url ? h('img', { src: url, alt: '', loading: 'lazy' }) : h('div', { class: 'ph' }),
+      url ? productImg(url, { alt: '', loading: 'lazy' }, () => h('div', { class: 'ph' })) : h('div', { class: 'ph' }),
       h(
         'div',
         { class: 'b' },
