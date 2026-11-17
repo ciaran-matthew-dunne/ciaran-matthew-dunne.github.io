@@ -23,6 +23,16 @@ jobs:
         with:
           fetch-depth: 1
 
+      # paris: the map's data (55 MB) is kept off main, as the single commit of
+      # the paris-data branch (published by the map's scripts/publish-site.mjs)
+      - name: Fetch the Paris map's data
+        uses: actions/checkout@v4
+        with:
+          ref: paris-data
+          path: website/paris/data
+          fetch-depth: 1
+          persist-credentials: false
+
       - name: Fetch latest CV
         run: |
           curl -sL -o website/files/cv.pdf \
